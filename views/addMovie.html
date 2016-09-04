@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>添加电影</title>
+    <link rel="stylesheet" type="text/css" href="/css/addMovie.css">
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li id="Login" class="Lonin"> <a href="/Login">Login</a></li>
+        <li id="Signup" class="Signup"> <a href="/Signup">Signup</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="tcontent">
+          <h2 class="title">Add Movie</h2>
+        </div>
+        <div class="details">
+          <form action="/addMovie" method="post" class="minfo">
+            <label for="mName"><span>电影名称：</span>
+              <input id="mName" name="mName" type="text">
+            </label>
+            <label for="mType"><span>电影类型：</span>
+              <input id="mType" name="mType" type="text">
+            </label>
+            <label for="mPulYear"><span>上映时间：</span>
+              <input id="mPulYear" name="mPulYear" type="text">
+            </label>
+            <label for="mActor"><span>主演：</span>
+              <input id="mActor" name="mActor" type="text">
+            </label>
+            <label for="mDoctor"><span>导演：</span>
+              <input id="mDoctor" name="mDoctor" type="text">
+            </label>
+            <label for="sumary"><span>剧情简介：</span>
+              <textarea id="mSumary" name="mSumary" style="width:480px;height:200px"></textarea>
+            </label>
+            <div class="submit">
+              <button id="submit" type="submit">提交</button>
+              <button id="reset" type="reset">重置</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

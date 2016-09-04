@@ -1,0 +1,138 @@
+doctype html
+html
+  head
+    title Mymovie
+    link(type="text/css",rel="stylesheet",href="/css/index.css")
+    script(src="/js/jquery-3.0.0.min.js")
+    script(src="/js/index.js")
+  body
+    div.header
+      ul
+        li#Signup 
+          a(href="#") Signup
+        li#Login 
+          a(href="#") Login
+        li#Logout.ls_hide
+          a(href="/") Logout
+    div.container
+      div.content
+        div.contop
+          h2.title My Show
+          div.search
+            object(data="/images/search.svg")
+            input#searStr(placeholder="Search for a movie")
+            button#searchBtn(value="search") search
+        div.contentNav
+          nav.nav
+            li 
+              object.home(data="/images/home.svg")
+              a(href="#") 主页
+            li 
+              a(href="/comedy") 喜剧
+            li 
+              a(href="/action") 动作
+            li 
+              a(href="/sci-fi") 科幻        
+            li 
+              a(href="/drama") 剧情
+            li.contact 
+              a(href="/contact.html") Contact
+        div.division
+          div.comedy
+            h3 
+              a(href="/comedy") 喜剧
+            ul.mlist
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+          div.action
+            h3 
+              a(href="/action") 动作
+            ul.mlist
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情 
+          div.sci-fi
+            h3 
+              a(href="/sci-fi") 科幻
+            ul.mlist
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+          div.drama
+            h3 
+              a(href="sci-fi") 剧情
+            ul.mlist
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+              li
+                h3.mlistTitle Capteam America
+                img(src="/images/capAme.jpg")
+                a(href="/comedy/capAme") 查看详情
+        div#log.logdiv.ls_hide
+          div.log
+            form.form(action="/Login",method="post",id="logform")
+              h3.ftitle 登陆
+              label(for="logName") 用户名 ：
+              input(id="logName",placeholder="username",name="logName",required)
+              label(for="logPwd") 密码 ：
+              input(id="logPwd",type="password",placeholder="password", name="logPwd",required)
+              div.subsec
+                button#logsubmit(type="submit") 提交
+                button#reset(type="reset") 重置
+              div#loghide.cancel
+                span X
+        div#sign.logdiv.ls_hide
+          div.sign
+            form.form(action="/signup",method="post",id="signform")
+              h3.ftitle 注册
+              label(for="signName") 用户名 ：
+              input(id="signName",placeholder="username", name="signName",required)
+              label(for="signMail") 邮箱 ：
+              input(id="signMail" name="signMail",required,placeholder="email")
+              label(for="signPwd") 密码 ：
+              input(id="signPwd",type="password",placeholder="password",name="signPwd",required)
+              label(for="confirmPwd") 确认密码 ：
+              input(id="confirmPwd",type="password",placeholder="confirmpassword",name="confirmPwd",required)
+              div.subsec
+                button#signsubmit(type="submit") 提交
+                button#signreset(type="reset") 重置
+              div#signhide.cancel
+                span X
+        div.footer
+          hr
+          div.copyright
+            p @copyright 2016 ok

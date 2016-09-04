@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title 添加电影
+    link(rel="stylesheet",type="text/css",href="/css/addMovie.css")
+    script(src="/js/jquery-3.0.0.min.js")
+    script(src="/js/addMovie.js")
+  body
+    div.header
+      ul
+        li#Login.Lonin 
+          a(href="/Login") Login
+        li#Signup.Signup 
+          a(href="/Signup") Signup
+    div.container
+      div.content
+        div.tcontent
+          h2.title Add Movie
+        div.details
+          form.minfo(action="/addMovie",method="post")
+            label(for="mName")
+              span 电影名称：
+              input(id="mName",name="mName", type="text")
+            label(for="mType")
+              span 电影类型：
+              input(id="mType",name="mType",type="text")
+            label(for="mPulYear")
+              span 上映时间：
+              input(id="mPulYear",name="mPulYear" type="text") 
+            label(for="mActor")
+              span 主演：
+              input(id="mActor",name="mActor", type="text")
+            label(for="mDoctor")
+              span 导演：
+              input(id="mDoctor",name="mDoctor",type="text")
+            label(for="sumary")
+              span 剧情简介：
+              textarea(id="mSumary" ,name="mSumary",style="width:480px;height:200px")
+            div.submit
+              button#submit(type="submit") 提交
+              button#reset(type="reset") 重置

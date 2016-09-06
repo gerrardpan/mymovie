@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
  var schema = mongoose.Schema;
   var user = new schema({
-  	uid:Number,
   	uname:String,
   	upwd:String
   });

@@ -16,5 +16,6 @@ exports.routes = function(app) {
     app.get("/details",movie.details);
  
     //user route handle
+    app.post("/Signup",user.Signup);
     app.post("/Login",user.Login);   
 }; 

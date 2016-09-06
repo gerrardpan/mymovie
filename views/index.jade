@@ -7,13 +7,16 @@ html
     script(src="/js/index.js")
   body
     div.header
-      ul
+      ul#log_show
         li#Signup 
           a(href="#") Signup
         li#Login 
           a(href="#") Login
-        li#Logout.ls_hide
-          a(href="/") Logout
+      ul#head_log.ls_hide
+          li#Logout 
+            a(href="/") Logout
+          li
+            a#user_link(href="#")
     div.container
       div.content
         div.contop

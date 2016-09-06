@@ -7,11 +7,16 @@ html
     script(src="/js/addMovie.js")
   body
     div.header
-      ul
+      ul#log_show
         li#Login.Lonin 
           a(href="/Login") Login
         li#Signup.Signup 
           a(href="/Signup") Signup
+      ul#head_log.hide
+          li#Logout
+            a(href="/") Logout
+          li 
+            a#user_link(href="#")
     div.container
       div.content
         div.tcontent

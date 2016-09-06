@@ -7,11 +7,16 @@ html
     script(src="/js/details.js")
   body
     div.header
-      ul
+      ul#log_show
         li#Login.Lonin.pointer 
           a(href="/Login") Login
         li#Signup.Signup.pointer 
           a(href="/Signup") Signup
+      ul#head_log.hide
+        li#Logout 
+            a(href="/") Logout
+          li 
+            a#user_link(href="#")
     div.container
       div.content
         div.mNav
@@ -51,8 +56,12 @@ html
               div.crifooter
                 div.share
                   label 分享到：
-                  a(href="#",title="weibo") 微博
-                  input#share(type="checkbox")
-                button.pointer.submit(type="submit") 发布 
+                  a(href="#",title="weibo") 微博 
+                  input#share(type="checkbox") 
+                button.pointer.submit(type="submit") 发布
+            div#tohide.fake
+              div.tolog 
+                span 登陆之后评论，点击
+                  a(href="#") 登陆
           div.crilist 
 
